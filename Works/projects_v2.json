@@ -1,0 +1,736 @@
+[
+    {
+        "id": "proscenium",
+        "title": "Proscenium",
+        "date": "2025-ongoing",
+        "layout": [
+            {
+                "type": "slideshow",
+                "source": "work_images",
+                "variant": "multi",
+                "captionmode": "separate"
+            },
+            {
+                "type": "text",
+                "source": "description"
+            },
+            {
+                "type": "separator"
+            },
+            {
+                "type": "grid",
+                "source": "work_images",
+                "variant": "multi",
+                "captionmode": "separate"
+            },
+            {
+                "type": "grid",
+                "source": "installation_images",
+                "variant": "single",
+                "captionmode": "attached"
+            }
+        ],
+        "content": {
+            "work_images": [
+                {
+                    "src": "proscenium/Work Images/1.jpg",
+                    "title": "Proscenium I",
+                    "medium": "Graphite and charcoal on paper",
+                    "size": "18in x 24in",
+                    "year": "2025"
+                },
+                {
+                    "src": "proscenium/Work Images/2.jpg",
+                    "title": "Proscenium II",
+                    "medium": "Graphite and charcoal on paper",
+                    "size": "18in x 24in",
+                    "year": "2025"
+                },
+                {
+                    "src": "proscenium/Work Images/3.jpg",
+                    "title": "Proscenium III",
+                    "medium": "Graphite and charcoal on paper",
+                    "size": "18in x 24in",
+                    "year": "2025"
+                },
+                {
+                    "src": "proscenium/Work Images/4.jpg",
+                    "title": "Proscenium IV",
+                    "medium": "Graphite and charcoal on paper",
+                    "size": "18in x 24in",
+                    "year": "2025"
+                },
+                {
+                    "src": "proscenium/Work Images/5.jpg",
+                    "title": "Proscenium V",
+                    "medium": "Graphite and charcoal on paper",
+                    "size": "18in x 24in",
+                    "year": "2025"
+                },
+                {
+                    "src": "proscenium/Work Images/6.jpg",
+                    "title": "Proscenium VI",
+                    "medium": "Graphite and charcoal on paper",
+                    "size": "18in x 24in",
+                    "year": "2025"
+                },
+                {
+                    "src": "proscenium/Work Images/7.jpg",
+                    "title": "Proscenium VII",
+                    "medium": "Graphite and charcoal on paper",
+                    "size": "18in x 24in",
+                    "year": "2025"
+                }
+            ],
+            "description": [
+                "This work examines landscapes as constructed images rather than neutral realities. It looks at how facades are used to shape perception by concealing what lies beneath. The idea of the Potemkin village serves as a key reference, showing how architecture and surface visuals create convincing illusions. These staged landscapes often mimic nature and evoke familiarity, yet remain artificial. When emptied of people, the illusion weakens. Through drawing, the work reveals seams, scaffolding, and structure, exposing how selective framing constructs belief while hiding other realities."
+            ],
+            "installation_images": [
+                {
+                    "src": "proscenium/Installation Images/1.jpg",
+                    "label": "Alien Shores: landscape, once removed, White Cube, Bermondsey, 2025"
+                }
+            ]
+        }
+    },
+    {
+        "id": "archipelago_of_storms_and_spirits",
+        "title": "Archipelago of storms and spirits",
+        "date": "2024",
+        "layout": [
+            {
+                "type": "slideshow",
+                "source": "work_images",
+                "variant": "multi"
+            },
+            {
+                "type": "text",
+                "source": "description"
+            },
+            {
+                "type": "video",
+                "source": "main_video"
+            },
+            {
+                "type": "separator"
+            },
+            {
+                "type": "grid",
+                "source": "work_images",
+                "variant": "multi"
+            },
+            {
+                "type": "grid",
+                "source": "installation_images",
+                "variant": "single"
+            }
+        ],
+        "content": {
+            "work_images": [
+                {
+                    "src": "archipelago_of_storms_and_spirits/Work Images/Drawing 1.jpg",
+                    "title": "Untitled",
+                    "medium": "Graphite and charcoal on paper",
+                    "size": "10.8in x 14.5in",
+                    "year": "2024"
+                },
+                {
+                    "src": "archipelago_of_storms_and_spirits/Work Images/Drawing 2.jpg",
+                    "title": "Untitled",
+                    "medium": "Graphite and charcoal on paper",
+                    "size": "10.8in x 14.5in",
+                    "year": "2024"
+                },
+                {
+                    "src": "archipelago_of_storms_and_spirits/Work Images/Drawing 3.jpg",
+                    "title": "Untitled",
+                    "medium": "Graphite and charcoal on paper",
+                    "size": "10.8in x 14.5in",
+                    "year": "2024"
+                },
+                {
+                    "src": "archipelago_of_storms_and_spirits/Work Images/Drawing 4.jpg",
+                    "title": "Untitled",
+                    "medium": "Graphite and charcoal on paper",
+                    "size": "10.8in x 14.5in",
+                    "year": "2024"
+                },
+                {
+                    "src": "archipelago_of_storms_and_spirits/Work Images/Drawing 5.jpg",
+                    "title": "Untitled",
+                    "medium": "Graphite and charcoal on paper",
+                    "size": "10.8in x 14.5in",
+                    "year": "2024"
+                },
+                {
+                    "src": "archipelago_of_storms_and_spirits/Work Images/Drawing 6.jpg",
+                    "title": "Untitled",
+                    "medium": "Graphite and charcoal on paper",
+                    "size": "10.8in x 14.5in",
+                    "year": "2024"
+                },
+                {
+                    "src": "archipelago_of_storms_and_spirits/Work Images/Drawing 7.jpg",
+                    "title": "Untitled",
+                    "medium": "Graphite and charcoal on paper",
+                    "size": "10.8in x 14.5in",
+                    "year": "2024"
+                },
+                {
+                    "src": "archipelago_of_storms_and_spirits/Work Images/Mixed Media 1.jpg",
+                    "title": "Untitled",
+                    "medium": "Ink and turpentine on photographic paper",
+                    "size": "41.7in x 52in",
+                    "year": "2023"
+                },
+                {
+                    "src": "archipelago_of_storms_and_spirits/Work Images/Mixed Media 2.jpg",
+                    "title": "Untitled",
+                    "medium": "Ink and turpentine on photographic paper",
+                    "size": "41.7in x 52in",
+                    "year": "2023"
+                },
+                {
+                    "src": "archipelago_of_storms_and_spirits/Work Images/Mixed Media 3.jpg",
+                    "title": "Untitled",
+                    "medium": "Ink and turpentine on photographic paper",
+                    "size": "41.7in x 52in",
+                    "year": "2023"
+                },
+                {
+                    "src": "archipelago_of_storms_and_spirits/Work Images/Mixed Media 4.jpg",
+                    "title": "Untitled",
+                    "medium": "Ink and turpentine on photographic paper",
+                    "size": "41.7in x 52in",
+                    "year": "2023"
+                }
+            ],
+            "description": [
+                "Set in the Sundarbans delta, Neti unfolds across long nights shaped by tides, storms, and slow ecological loss. Spirits, animals, and human traces coexist as the sea steadily erases land. The work views extinction as incremental rather than cyclical, marked by continuous loss. Using photography and drawing combined with digital tools, landscapes are layered, cinematic, and theatrical. Dense compositions recall dioramas and historical illustration, while quieter drawings isolate fragile moments. These shifting islands hold memory, uncertainty, and brief refuge, where light persists amid instability."
+            ],
+            "main_video": {
+                "host": "YT",
+                "link": "https://youtu.be/8RIPDLcPtgk"
+            },
+            "installation_images": [
+                {
+                    "src": "archipelago_of_storms_and_spirits/Installation Images/1.jpg",
+                    "label": "Archipelago of Storms and Spirits, Jhaveri Contemporary, Mumbai, 2024"
+                },
+                {
+                    "src": "archipelago_of_storms_and_spirits/Installation Images/2.jpg",
+                    "label": "Archipelago of Storms and Spirits, Jhaveri Contemporary, Mumbai, 2024"
+                },
+                {
+                    "src": "archipelago_of_storms_and_spirits/Installation Images/3.jpg",
+                    "label": "Archipelago of Storms and Spirits, Jhaveri Contemporary, Mumbai, 2024"
+                },
+                {
+                    "src": "archipelago_of_storms_and_spirits/Installation Images/4.jpg",
+                    "label": "Archipelago of Storms and Spirits, Jhaveri Contemporary, Mumbai, 2024"
+                },
+                {
+                    "src": "archipelago_of_storms_and_spirits/Installation Images/5.jpg",
+                    "label": "Archipelago of Storms and Spirits, Jhaveri Contemporary, Mumbai, 2024"
+                },
+                {
+                    "src": "archipelago_of_storms_and_spirits/Installation Images/6.jpg",
+                    "label": "Archipelago of Storms and Spirits, Jhaveri Contemporary, Mumbai, 2024"
+                }
+            ]
+        }
+    },
+    {
+        "id": "day_zero",
+        "title": "Day Zero",
+        "date": "2022",
+        "layout": [
+            {
+                "type": "slideshow",
+                "source": "screenshots",
+                "variant": "single",
+                "captionmode": "separate"
+            },
+            {
+                "type": "text",
+                "source": "description"
+            },
+            {
+                "type": "video",
+                "source": "main_video"
+            },
+            {
+                "type": "separator"
+            },
+            {
+                "type": "slideshow",
+                "source": "work_images",
+                "variant": "multi",
+                "captionmode": "separate"
+            },
+            {
+                "type": "grid",
+                "source": "installation_images",
+                "variant": "single",
+                "captionmode": "attached"
+            }
+        ],
+        "content": {
+            "screenshots":[
+                {
+                    "src": "day_zero/Screenshots/Screenshots 1.jpg",
+                    "title":"",
+                    "medium":"",
+                    "size":"",
+                    "year":""
+                },
+                {
+                    "src": "day_zero/Screenshots/Screenshots 2.jpg",
+                    "title":"",
+                    "medium":"",
+                    "size":"",
+                    "year":""
+                },
+                {
+                    "src": "day_zero/Screenshots/Screenshots 3.jpg",
+                    "title":"",
+                    "medium":"",
+                    "size":"",
+                    "year":""
+                },
+                {
+                    "src": "day_zero/Screenshots/Screenshots 4.jpg",
+                    "title":"",
+                    "medium":"",
+                    "size":"",
+                    "year":""
+                },
+                {
+                    "src": "day_zero/Screenshots/Screenshots 5.jpg",
+                    "title":"",
+                    "medium":"",
+                    "size":"",
+                    "year":""
+                },
+                {
+                    "src": "day_zero/Screenshots/Screenshots 6.jpg",
+                    "title":"",
+                    "medium":"",
+                    "size":"",
+                    "year":""
+                },
+                {
+                    "src": "day_zero/Screenshots/Screenshots 7.jpg",
+                    "title":"",
+                    "medium":"",
+                    "size":"",
+                    "year":""
+                },
+                {
+                    "src": "day_zero/Screenshots/Screenshots 8.jpg",
+                    "title":"",
+                    "medium":"",
+                    "size":"",
+                    "year":""
+                },
+                {
+                    "src": "day_zero/Screenshots/Screenshots 9.jpg",
+                    "title":"",
+                    "medium":"",
+                    "size":"",
+                    "year":""
+                },
+                {
+                    "src": "day_zero/Screenshots/Screenshots 10.jpg",
+                    "title":"",
+                    "medium":"",
+                    "size":"",
+                    "year":""
+                }
+            ],
+            "work_images": [
+                {
+                    "src": "day_zero/Work Images/1.jpg",
+                    "title": "Untitled",
+                    "medium": "Acrylic on photographic vinyl sheet",
+                    "size": "48in x 64in",
+                    "year": "2022"
+                },
+                {
+                    "src": "day_zero/Work Images/2.jpg",
+                    "title": "Untitled",
+                    "medium": "Acrylic on photographic vinyl sheet",
+                    "size": "64in x 96in (Diptych)",
+                    "year": "2025"
+                },
+                {
+                    "src": "day_zero/Work Images/3.jpg",
+                    "title": "Untitled",
+                    "medium": "Acrylic on photographic vinyl sheet",
+                    "size": "64in x 48in",
+                    "year": "2025"
+                },
+                {
+                    "src": "day_zero/Work Images/4.jpg",
+                    "title": "Untitled",
+                    "medium": "Projection mapping on wood",
+                    "size": "Variable dimensions",
+                    "year": "2022"
+                },
+                {
+                    "src": "day_zero/Work Images/5.jpg",
+                    "title": "Day Zero",
+                    "medium": "Single Channel Video",
+                    "size": "7min 42sec",
+                    "year": "2022"
+                }
+            ],
+            "description": [
+                "Day Zero draws on geological and climatic evidence to examine ecological and infrastructural violence. The work imagines a future without humans, turning viewers into witnesses. Atmosphere becomes a political space where water appears as melting surface, currency, and toxic resource. It reflects on a shift from wet to dry worlds and questions faith in technological solutions. Using game-like navigation, layered sound, and stark landscapes, the work evokes an uncanny loss of control, revealing scarcity, extraction, and thirst as forms of power."
+            ],
+            "main_video": {
+                "link": "https://youtu.be/cKUbfhQY5ks",
+                "host": "YT"
+            },
+            "installation_images": [
+                {
+                    "src": "day_zero/Installation Images/1.jpg",
+                    "label": "Kochi Muziris Biennale, Kochi, 2022"
+                },
+                {
+                    "src": "day_zero/Installation Images/2.jpg",
+                    "label": "Kochi Muziris Biennale, Kochi, 2022"
+                },
+                {
+                    "src": "day_zero/Installation Images/3.jpg",
+                    "label": "Kochi Muziris Biennale, Kochi, 2022"
+                }
+            ]
+        }
+    },
+    {
+        "id": "moments_before_the_fall",
+        "title": "Moments before the fall",
+        "date": "2020",
+        "layout": [
+            {
+                "type": "slideshow",
+                "source": "work_images",
+                "variant": "single",
+                "captionmode": "separate"
+            },
+            {
+                "type": "text",
+                "source": "description"
+            },
+            {
+                "type": "video",
+                "source": "main_video"
+            },
+            {
+                "type": "text",
+                "source": "description2"
+            },
+            {
+                "type": "grid",
+                "source": "screenshots",
+                "variant": "single",
+                "captionmode": "separate"
+            },
+            {
+                "type": "text",
+                "source": "description3"
+            },
+            {
+                "type": "separator"
+            },
+            {
+                "type": "grid",
+                "source": "installation_images",
+                "variant": "single",
+                "captionmode": "attached"
+            }
+        ],
+        "content": {
+            "work_images": [
+                {
+                    "src": "moments_before_the_fall/Screengrabs/1.jpg",
+                    "title": "",
+                    "medium": "",
+                    "size": "",
+                    "year": ""
+                },
+                {
+                    "src": "moments_before_the_fall/Screengrabs/2.jpg",
+                    "title": "",
+                    "medium": "",
+                    "size": "",
+                    "year": ""
+                },
+                {
+                    "src": "moments_before_the_fall/Screengrabs/3.jpg",
+                    "title": "",
+                    "medium": "",
+                    "size": "",
+                    "year": ""
+                },
+                {
+                    "src": "moments_before_the_fall/Screengrabs/4.jpg",
+                    "title": "",
+                    "medium": "",
+                    "size": "",
+                    "year": ""
+                }
+            ],
+            "description": [
+                "Moments before the Fall is a simulation of ecological conditions generated by numbers and codes. Taking as it’s starting point, the generation of a cumulonimbus cloud that eventually leads to a  cloudburst, the incident is an unfolding of 36 minutes of simulated time expanded into 144 hours in real time."
+            ],
+            "description2": [
+                "This project talks about the age of AI (Artificial Intelligence) and how it governs the World today - A natural phenomenon explored through the lens and the brain of a machine. The software takes numbers and measures to create approximations and estimates of the generation of a cloudburst and the resultant downpour.",
+                "Moments before the Fall is entirely a machine made creation. The World constructed is a result of numerous codes and inputs."
+            ],
+            "description3": [
+                "The project has been distributed over a slot of 6 days. Each moment within the simulation is unique and will not repeat itself over the span of the project.",
+                "For a period of 6 days, the site functions as an immersive inverted light box composed of the procedural construction and deconstruction of the cloudburst.",
+                "Moments Before the Fall is realised within the framework of Five Million Incidents, 2019-2020, conceived by Goethe-Institut / Max Mueller Bhavan in collaboration with Raqs Media Collective."
+            ],
+            "main_video": {
+                "link": "https://vimeo.com/431812621?fl=pl&fe=sh",
+                "host": "Vimeo"
+            },
+            "installation_images": [
+                {
+                    "src": "moments_before_the_fall/Installation Images/1.jpg",
+                    "label": "Five Million Incidents, Goethe-Institut, Max Mueller Bhavan, Delhi, 2020"
+                },
+                {
+                    "src": "moments_before_the_fall/Installation Images/2.jpg",
+                    "label": "Five Million Incidents, Goethe-Institut, Max Mueller Bhavan, Delhi, 2020"
+                },
+                {
+                    "src": "moments_before_the_fall/Installation Images/3.jpg",
+                    "label": "Five Million Incidents, Goethe-Institut, Max Mueller Bhavan, Delhi, 2020"
+                }
+            ],
+            "screenshots": [
+                {
+                    "src": "moments_before_the_fall/Installation Images/Workflow image.png",
+                    "label": "Backend workflow"
+                }
+            ]
+        }
+    },
+    {
+        "id": "beneath_the_steel_sky",
+        "title": "Beneath the steel sky",
+        "date": "2019",
+        "layout": [
+            {
+                "type": "slideshow",
+                "source": "work_images",
+                "variant": "multi",
+                "captionmode": "separate"
+            },
+            {
+                "type": "text",
+                "source": "description"
+            },
+            {
+                "type": "video",
+                "source": "main_video"
+            },
+            {
+                "type": "separator"
+            },
+            {
+                "type": "grid",
+                "variant": "multi",
+                "source": "work_images",
+                "captionmode": "separate"
+            }
+        ],
+        "content": {
+            "work_images": [
+                {
+                    "src": "beneath_the_steel_sky/Work Images/1.jpg",
+                    "title": "Untitled",
+                    "medium": "Acrylic on photographic vinyl sheet",
+                    "size": "54in x 72in",
+                    "year": "2019"
+                },
+                {
+                    "src": "beneath_the_steel_sky/Work Images/2.jpg",
+                    "title": "Details",
+                    "medium": "",
+                    "size": "",
+                    "year": ""
+                },
+                {
+                    "src": "beneath_the_steel_sky/Work Images/3.jpg",
+                    "title": "Untitled",
+                    "medium": "Acrylic on photographic vinyl sheet",
+                    "size": "54in x 72in",
+                    "year": "2025"
+                },
+                {
+                    "src": "beneath_the_steel_sky/Work Images/4.jpg",
+                    "title": "Details",
+                    "medium": "",
+                    "size": "",
+                    "year": ""
+                },
+                {
+                    "src": "beneath_the_steel_sky/Work Images/5.jpg",
+                    "title": "Untitled",
+                    "medium": "Acrylic on photographic vinyl sheet",
+                    "size": "54in x 72in",
+                    "year": "2019"
+                },
+                {
+                    "src": "beneath_the_steel_sky/Work Images/6.jpg",
+                    "title": "Details",
+                    "medium": "",
+                    "size": "",
+                    "year": ""
+                }
+            ],
+            "description": [
+                "‘Beneath a steel sky’ navigates the other future - a chance with ocean colonization/sea-steading instead of space colonies. The inevitable end of our terrestrial lives with glacial melting, unstable climates and erosion, leads us to think of terra-forming very differently, more so in the absence of the sun. Nature must be brought indoors and cultivated in specific conditions in artificial climates. These chambers enveloping entire mountain and glacial ecologies, float on the ocean surface, or are secured to the ocean floor - a construction existing “outside” national sea boundaries, a micronation. This archipelago is interlinked with non-corrosive metal pipes that move the harvested water."
+            ],
+            "description2": [],
+            "main_video": {
+                "link": "https://vimeo.com/340889874?fl=pl&fe=sh",
+                "host": "Vimeo"
+            }
+        }
+    },
+    {
+        "id": "volatile",
+        "title": "Volatile",
+        "date": "2018",
+        "layout": [
+            {
+                "type": "slideshow",
+                "variant": "multi",
+                "source": "work_images",
+                "captionmode": "separate"
+            },
+            {
+                "type": "text",
+                "source": "description"
+            }
+        ],
+        "content": {
+            "work_images": [
+                {
+                    "src": "volatile/Work Images/1.jpg",
+                    "title": "Untitled",
+                    "medium": "Ink and turpentine on photograph",
+                    "size": "8.75in x 14in",
+                    "year": "2018"
+                },
+                {
+                    "src": "volatile/Work Images/2.jpg",
+                    "title": "Untitled",
+                    "medium": "Ink and turpentine on photograph",
+                    "size": "8.75in x 14in",
+                    "year": "2018"
+                },
+                {
+                    "src": "volatile/Work Images/3.jpg",
+                    "title": "Untitled",
+                    "medium": "Ink and turpentine on photograph",
+                    "size": "8.75in x 14in",
+                    "year": "2018"
+                },
+                {
+                    "src": "volatile/Work Images/4.jpg",
+                    "title": "Untitled",
+                    "medium": "Ink and turpentine on photograph",
+                    "size": "8.75in x 14in",
+                    "year": "2018"
+                },
+                {
+                    "src": "volatile/Work Images/5.jpg",
+                    "title": "Untitled",
+                    "medium": "Ink and turpentine on photograph",
+                    "size": "8.75in x 14in",
+                    "year": "2018"
+                },
+                {
+                    "src": "volatile/Work Images/6.jpg",
+                    "title": "Untitled",
+                    "medium": "Ink and turpentine on photograph",
+                    "size": "8.75in x 14in",
+                    "year": "2018"
+                },
+                {
+                    "src": "volatile/Work Images/7.jpg",
+                    "title": "Untitled",
+                    "medium": "Ink and turpentine on photograph",
+                    "size": "8.75in x 14in",
+                    "year": "2018"
+                },
+                {
+                    "src": "volatile/Work Images/8.jpg",
+                    "title": "Untitled",
+                    "medium": "Ink and turpentine on photograph",
+                    "size": "8.75in x 14in",
+                    "year": "2018"
+                },
+                {
+                    "src": "volatile/Work Images/9.jpg",
+                    "title": "Untitled",
+                    "medium": "Ink and turpentine on photograph",
+                    "size": "8.75in x 14in",
+                    "year": "2018"
+                },
+                {
+                    "src": "volatile/Work Images/10.jpg",
+                    "title": "Untitled",
+                    "medium": "Ink and turpentine on photograph",
+                    "size": "8.75in x 14in",
+                    "year": "2018"
+                },
+                {
+                    "src": "volatile/Work Images/11.jpg",
+                    "title": "Untitled",
+                    "medium": "Ink and turpentine on photograph",
+                    "size": "8.75in x 14in",
+                    "year": "2018"
+                },
+                {
+                    "src": "volatile/Work Images/12.jpg",
+                    "title": "Untitled",
+                    "medium": "Ink and turpentine on photograph",
+                    "size": "8.75in x 14in",
+                    "year": "2018"
+                },
+                {
+                    "src": "volatile/Work Images/13.jpg",
+                    "title": "Untitled",
+                    "medium": "Ink and turpentine on photograph",
+                    "size": "8.75in x 14in",
+                    "year": "2018"
+                },
+                {
+                    "src": "volatile/Work Images/14.jpg",
+                    "title": "Untitled",
+                    "medium": "Ink and turpentine on photograph",
+                    "size": "8.75in x 14in",
+                    "year": "2018"
+                },
+                {
+                    "src": "volatile/Work Images/15.jpg",
+                    "title": "Untitled",
+                    "medium": "Ink and turpentine on photograph",
+                    "size": "8.75in x 14in",
+                    "year": "2018"
+                }
+            ],
+            "description": [
+                "Erasure and reconstruction of an image."
+            ]
+        }
+    }
+]

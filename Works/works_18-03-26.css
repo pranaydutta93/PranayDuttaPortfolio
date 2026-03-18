@@ -1,0 +1,910 @@
+@font-face {
+  font-family: 'Neris';
+  src: url('../fonts/Neris-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neris';
+  src: url('../fonts/Neris-ThinItalic.otf') format('opentype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Neris';
+  src: url('../fonts/Neris-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neris';
+  src: url('../fonts/Neris-LightItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scrollbar-gutter: stable
+}
+
+html,
+body {
+  height: 100%;
+}
+
+:root{
+  --bg-url: url("../BG3LOWRES.jpg");
+  --maincolor: #9c9c9c;
+}
+
+body{ color: var(--text); }
+.bgLayer{ background-image: var(--bg-url); }
+
+body {
+  color: var(--maincolor);
+  background: #000;
+  font-family: 'Neris', sans-serif;
+}
+
+.bgLayer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  inset: 0;
+  width: 100vw;
+  height: 100lvh;
+  z-index: -1;
+  pointer-events: none;
+  background-image: var(--bg-url);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.worksWrapper {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+}
+
+.topBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  pointer-events: none;
+  overflow: hidden;
+  clip-path: inset(0);
+  --panel-h: 80px;
+  --fade-extend: 100px;
+
+  /* total height = solid + fade */
+  height: calc(var(--panel-h) + var(--fade-extend));
+
+  -webkit-mask-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 1) 0,
+      rgba(0, 0, 0, 1) var(--panel-h),
+      rgba(0, 0, 0, 0) calc(var(--panel-h) + var(--fade-extend)));
+  mask-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 1) 0,
+      rgba(0, 0, 0, 1) var(--panel-h),
+      rgba(0, 0, 0, 0) calc(var(--panel-h) + var(--fade-extend)));
+}
+
+.topBar::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100lvh;
+
+  background-image: var(--bg-url);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Fixed top bar containing hamburger + project title */
+.projectTitleBar {
+  position: fixed;
+  top: 2.5rem;
+  z-index: 60;
+  padding: 0 2.8rem 1.4rem 6rem;
+  background: transparent;
+  width: 100%;
+}
+
+/* Fixed hamburger and title outside panel */
+.hamburgerToggleFixed {
+  position: fixed;
+  top: 3rem;
+  left: 2.5rem;
+  z-index: 110;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: var(--maincolor);
+  transition: color 0.2s ease;
+}
+
+.hamburgerToggleFixed span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: currentColor;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+.hamburgerToggleFixed:hover {
+  color: #c3ff4a;
+}
+
+.hamburgerToggleFixed.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburgerToggleFixed.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburgerToggleFixed.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.projectTitle {
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+
+.projectTitleSeparator {
+  width: 100%;
+  background-color: var(--maincolor);
+  height: 2px;
+  margin-top: 10px;
+}
+
+.projectSeparator {
+  width: 100%;
+  background-color: var(--maincolor);
+  height: 2px;
+}
+
+/*===== LEFT PANEL =====*/
+
+/* NEW: Panel-only background overlay that fades in (does NOT slide) */
+
+.leftPanelBg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100lvh;
+  z-index: 90;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  --panel-w: 600px;
+  --fade-extend: 220px;
+  width: calc(var(--panel-w) + var(--fade-extend));
+  overflow: hidden;
+  pointer-events: none;
+  clip-path: inset(0);
+
+  -webkit-mask-image: linear-gradient(to right,
+      rgba(0, 0, 0, 1) 0,
+      rgba(0, 0, 0, 1) calc(100% - var(--fade-extend)),
+      rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(to right,
+      rgba(0, 0, 0, 1) 0,
+      rgba(0, 0, 0, 1) calc(100% - var(--fade-extend)),
+      rgba(0, 0, 0, 0) 100%);
+}
+
+
+.leftPanelBg::before {
+  content: "";
+  position: fixed;
+  /* key change: fixed + full viewport */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100lvh;
+  background-image: var(--bg-url);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.leftPanelBg.is-visible {
+  opacity: 1;
+}
+
+.homeIcon {
+  position: fixed;
+  top: 2.3rem;
+  left: 5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--maincolor);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  z-index: 110;
+}
+
+.homeIcon:hover {
+  color: #c3ff4a;
+}
+
+.homeIconSVG {
+  height: 40px;
+  width: 40px;
+  stroke-width: 1.25;
+}
+
+.worksLeft {
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: fixed;
+  /* Changed from sticky for overlay */
+  left: 0;
+  top: 0;
+  z-index: 100;
+  min-width: 26%;
+  height: 100vh;
+  width: max-content;
+  /* grow to the longest line */
+  max-width: 100vw;
+  /* but never exceed the viewport */
+  min-width: 230px;
+  padding: 6rem 2.5rem 2.8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.worksLeft.closed {
+  transform: translateX(-100%);
+}
+
+/*===== PROJECT AND CATEGORY LIST =====*/
+.projectsBlock, .categoriesBlock {
+  display: flex;
+  position: relative;
+  margin-bottom: 3rem;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.categoriesBlock {
+  margin-top: auto;
+}
+
+.categoryMenu, .projectMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: 2rem;
+}
+
+.projectLink, .categoryLink {
+  display: block;
+  font-weight: 100;
+  font-size: 1.0rem;
+  color: var(--maincolor);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  letter-spacing: 0.07em;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+.projectLink:hover, .categoryLink:hover {
+  color: #c3ff4a;
+}
+
+.projectLink.is-active , .categoryLink.is-active {
+  color: #c3ff4a;
+}
+
+/*===== OTHER PROJECTS BOTTOM =====*/
+
+.categoriesBlock {
+  display: flex;
+  position: relative;
+  margin-bottom: 3rem;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+
+/*===== RIGHT SIDE =====*/
+.projectDetails {
+  position: relative;
+  width: 100%;
+  margin-left: 0;
+  z-index: 2;
+  flex: 1;
+  padding: 8rem 0 2.8rem 0;
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  transition: opacity 500ms ease;
+  /* soft fade */
+}
+
+.projectDetails.is-fading {
+  opacity: 0;
+}
+
+
+/* Main content */
+
+.projectMain {
+  flex: 1;
+  padding: 2rem 2.8rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* 6: slideshow container */
+.slideshowContainer {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: max-content;
+  max-height: 500px;
+  touch-action: pan-y;
+  cursor: grab;
+}
+
+.slideshowContainer.is-dragging {
+  cursor: grabbing;
+}
+
+
+.slideshowContainer.slideshow--single {
+  max-height: 700px;
+  max-height:80vh;
+  /* increase height vs current 500px */
+}
+
+.slideshowContainer.slideshow--single .slidesTrack {
+  gap: 2rem;
+}
+
+.slideshowContainer.slideshow--single .slidesTrack img {
+  flex: 0 0 100%;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.slideArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--maincolor);
+  font-size: 1.4rem;
+  cursor: pointer;
+  padding: 0 0.3rem;
+  line-height: 1;
+  transition: color 0.2s ease;
+  z-index: 5;
+}
+
+.slideArrowLeft {
+  left: 0.4rem;
+}
+
+.slideArrowRight {
+  right: 0.4rem;
+}
+
+.slideArrow:hover {
+  color: #c3ff4a;
+}
+
+.slidesTrack {
+  display: flex;
+  height: 100%;
+  transition: transform 0.6s ease;
+  gap: 2rem;
+  user-select: none;
+  will-change: transform;
+}
+
+.slidesTrack.is-dragging {
+  transition: none;
+}
+
+.slidesTrack img {
+  height: 100%;
+  width: auto;
+  max-width: 50%;
+  flex: 0 0 auto;
+  object-fit: contain;
+  cursor: pointer;
+  -webkit-user-drag: none;
+  user-select: none;
+  pointer-events: auto;
+}
+
+/*dots below slideshow*/
+.slideshowDots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.slideshowDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--maincolor);
+}
+
+.slideshowDot:hover {
+  background: #c3ff4a;
+}
+
+.slideshowDot.is-active {
+  background: #c3ff4a;
+  border: 2px solid #c3ff4a;
+}
+
+
+/* Description text */
+.projectText {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-weight: 100;
+  font-size: 1.0rem;
+  line-height: 1.7;
+  color: var(--maincolor)
+}
+
+.projectText p+p {
+  margin-top: 1.2rem;
+  /* spacing between paragraphs */
+}
+
+
+/* MSK Temp, make dynamic */
+.projectTextImg {
+  width: 100%;
+  /* Match the vertical rhythm of other blocks */
+}
+
+/* If you used <figure class="projectTextFigure"> */
+.projectTextFigure {
+  margin: 0;
+  /* remove default figure margins */
+  width: 100%;
+}
+
+.projectTextImg img,
+.projectTextFigure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  /* preserves aspect ratio */
+  max-width: 100%;
+  object-fit: contain;
+  /* don’t crop */
+}
+
+/* Video inlay */
+.videoInlay {
+  padding-top: 5rem;
+  width: 100%;
+  height: auto;
+}
+
+.videoInlayInner {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  /* 16:9 aspect ratio box */
+  overflow: hidden;
+}
+
+.videoInlayInner iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/*image-grid*/
+.imageGrid  {
+  padding-top: 5rem;
+}
+
+.imageGrid.is-multi .imageGridImages {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.2rem;
+}
+
+.imageGrid.is-multi .imageGridImages img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.imageGrid.is-single {
+  padding-top: 5rem;
+}
+
+.imageGrid.is-single .imageGridImages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.imageGrid.is-single .imageGridImages img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  cursor: pointer;
+}
+
+.imageGrid.imageGrid--inline {
+  padding-top: 0;   /* or whatever you want instead of 5rem */
+}
+
+/* Category pages */
+.categoryUnit{
+  display: flex;
+  align-items: flex-start; /* top align both columns [web:453] */
+  gap: 24px;               /* adjust to taste */
+}
+
+.categoryUnitText{
+  flex: 1 1 0;
+  min-width: 0;           /* allow text column to shrink in flex layouts */
+  text-align: left;
+  
+}
+
+.categoryUnitMedia{
+  flex: 0 0 auto;
+  width: min(66vw, 100%);   /* make the column itself wide (but capped) [web:468] */
+  margin-left: auto;
+  text-align: right;
+}
+
+.categoryUnitMedia img{
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.categoryUnitMedia iframe{
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;     /* keep proportional box [web:485] */
+  height: auto;
+  margin-left: auto;
+  border: 0;                /* optional */
+}
+
+
+/* Fullscreen image */
+.imageModal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms ease, visibility 0s linear 250ms;
+  z-index: 1002;
+}
+
+.imageModal.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transition: opacity 0.5s ease, visibility 0s;
+}
+
+.imageModalBackdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.imageModal.is-open .imageModalBackdrop {
+  opacity: 1;
+}
+
+#imageModalImg {
+  will-change: transform, opacity;
+  transition: transform 260ms ease, opacity 260ms ease;
+}
+
+#imageModalImg.is-dragging {
+  transition: none;
+}
+
+.imageModalContent {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  z-index: 2;
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 250ms ease;
+  touch-action: none;
+}
+
+.imageModal.is-open .imageModalContent {
+  opacity: 1;
+}
+
+.imageModalContent img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+.imageModalCaption {
+  position: fixed;
+  left: 1rem;
+  right: 0;
+  bottom: 1.5rem;
+  padding: 1.2rem 1.6rem;
+  font-family: 'Neris', sans-serif;
+  color: #f5f5f5;
+  pointer-events: none;
+}
+
+.imageModal.caption-attached .imageModalCaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1.2rem 1.6rem;
+  font-family: 'Neris', sans-serif;
+  color: #f5f5f5;
+  pointer-events: none;
+}
+
+.imageModalCaptionText {
+  max-width: 80vw;
+  font-size: 1.0rem;
+  line-height: 1.5;
+  font-weight: 100;
+}
+
+
+.modalArrow {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--maincolor);
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0 0.3rem;
+  line-height: 1;
+  transition: color 0.2s ease;
+  z-index: 1100;
+}
+
+.modalArrowLeft {
+  left: 0.4rem;
+}
+
+.modalArrowRight {
+  right: 0.4rem;
+}
+
+.modalArrow:hover,
+.imageModalClose:hover {
+  color: #c3ff4a;
+}
+
+.imageModalClose {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: var(--maincolor);
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+
+/* Next and previous project buttons */
+
+.projectNav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.projectNavBtn {
+  background: none;
+  border: none;
+  /*  border: 1px solid var(--maincolor);
+  border-radius: 0.5rem;*/
+  color: var(--maincolor);
+  padding: 0.7rem 1rem;
+  font: inherit;
+  font-weight: 300;
+  font-size: 50px;
+  letter-spacing: 0.07em;
+  cursor: pointer;
+}
+
+.projectNavBtn:enabled:hover {
+  color: #c3ff4a;
+  border-color: #c3ff4a;
+}
+
+.projectNavBtn:disabled {
+  opacity: 0.35;
+  cursor: default;
+  pointer-events: none;
+}
+
+/* Responsive tweaks */
+
+@media (max-width: 900px) {
+
+  .worksWrapper {
+    flex-direction: column;
+  }
+
+  .hamburgerToggleFixed {
+    top: 1.5rem;
+    left: 1.5rem;
+    width: 1.5rem;
+  }
+
+  .homeIcon {
+    top: 1rem;
+    left: 3.5rem;
+  }
+
+  .homeIconSVG {
+    height: 35px;
+    width: 35px;
+    stroke-width: 1.;
+  }
+
+  .projectTitleBar {
+    top: 1.2rem;
+    padding: 0 1rem 0 4.5rem;
+  }
+
+
+  .projectTitle {
+    font-size: 1.2rem;
+  }
+
+  .projectTitleSeparator {
+    height: 1px;
+  }
+
+  .projectLink,
+  .categoryLink {
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .projectMain {
+    padding: 0 1rem 0;
+    gap: 1.5rem;
+  }
+
+  .slideshowContainer {
+    height: auto;
+  }
+
+
+  .slidesTrack {
+    height: auto;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .slidesTrack img {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-width: 6px;
+  }
+
+  .slideshowDots {
+    margin-top: 0;
+  }
+
+  .slideshowDot {
+    height: 6px;
+    width: 6px;
+  }
+
+  .videoInlay {
+    padding-top: 1rem;
+  }
+
+  .projectSeparator {
+    height: 1px;
+    margin-top: 1rem;
+  }
+
+  .imageGrid ,
+  .imageGrid.is-single {
+    padding-top: 2rem;
+    ;
+  }
+
+  .projectNav {
+    padding-top: 0;
+  }
+
+  .projectNavBtn {
+    font-size: 40px;
+  }
+
+  .modalArrow {
+    font-size: 1.5rem;
+  }
+
+  .imageModal.caption-attached .imageModalCaption {
+    position: fixed;
+    left: 1rem;
+    right: 0;
+    bottom: 1.5rem;
+    padding: 1.2rem 1.6rem;
+    font-family: 'Neris', sans-serif;
+    color: #f5f5f5;
+    pointer-events: none;
+  }
+}
