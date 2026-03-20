@@ -607,10 +607,6 @@
                 "variant": "multi",
                 "source": "work_images",
                 "captionmode": "separate"
-            },
-            {
-                "type": "text",
-                "source": "description"
             }
         ],
         "content": {
@@ -720,9 +716,6 @@
                     "size": "8.75in x 14in",
                     "year": "2018"
                 }
-            ],
-            "description": [
-                "Erasure and reconstruction of an image."
             ]
         }
     }
