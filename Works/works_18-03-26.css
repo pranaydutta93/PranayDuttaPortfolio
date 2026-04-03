@@ -449,7 +449,6 @@ body {
   cursor: pointer;
   -webkit-user-drag: none;
   user-select: none;
-  pointer-events: auto;
 }
 
 /*dots below slideshow*/
@@ -656,6 +655,7 @@ body {
 #imageModalImg {
   will-change: transform, opacity;
   transition: transform 260ms ease, opacity 260ms ease;
+  cursor: grab;
 }
 
 #imageModalImg.is-dragging {

@@ -124,6 +124,8 @@ function buildSlideshowBlock(project, items, block = {}) {
         const img = document.createElement("img");
         img.src = item.src;
         img.alt = item.title ?? project.title ?? "";
+        img.draggable = false;
+        img.addEventListener("dragstart", (e) => e.preventDefault());
         track.appendChild(img);
     });
 
