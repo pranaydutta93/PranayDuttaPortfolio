@@ -44,11 +44,11 @@ body {
   height: 100%;
 }
 
-body{ color: var(--text); }
+body{ color: var(--main-color); }
 .bgLayer{ background-image: var(--bg-url); }
 
 body {
-  color: var(--maincolor);
+  color: var(--main-color);
   background: #000;
   font-family: 'Neris', sans-serif;
 }
@@ -138,7 +138,7 @@ body {
   border: none;
   cursor: pointer;
   padding: 0;
-  color: var(--maincolor);
+  color: var(--main-color);
   transition: color 0.2s ease;
 }
 
@@ -174,14 +174,14 @@ body {
 
 .projectTitleSeparator {
   width: 100%;
-  background-color: var(--maincolor);
+  background-color: var(--main-color);
   height: 2px;
   margin-top: 10px;
 }
 
 .projectSeparator {
   width: 100%;
-  background-color: var(--maincolor);
+  background-color: var(--main-color);
   height: 2px;
 }
 
@@ -239,7 +239,7 @@ body {
   left: 5rem;
   width: 1.5rem;
   height: 1.5rem;
-  color: var(--maincolor);
+  color: var(--main-color);
   background: none;
   border: none;
   padding: 0;
@@ -305,7 +305,7 @@ body {
   display: block;
   font-weight: 100;
   font-size: 1.0rem;
-  color: var(--maincolor);
+  color: var(--main-color);
   text-decoration: none;
   transition: color 0.2s ease;
   letter-spacing: 0.07em;
@@ -401,7 +401,7 @@ body {
   transform: translateY(-50%);
   background: none;
   border: none;
-  color: var(--maincolor);
+  color: var(--main-color);
   font-size: 1.4rem;
   cursor: pointer;
   padding: 0 0.3rem;
@@ -458,7 +458,7 @@ body {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: var(--maincolor);
+  background: var(--main-color);
 }
 
 .slideshowDot:hover {
@@ -478,7 +478,7 @@ body {
   font-weight: 100;
   font-size: 1.0rem;
   line-height: 1.7;
-  color: var(--maincolor)
+  color: var(--main-color)
 }
 
 .projectText p+p {
@@ -718,7 +718,7 @@ body {
   transform: translateY(-50%);
   background: none;
   border: none;
-  color: var(--maincolor);
+  color: var(--main-color);
   font-size: 2rem;
   cursor: pointer;
   padding: 0 0.3rem;
@@ -746,7 +746,7 @@ body {
   right: 1rem;
   background: none;
   border: none;
-  color: var(--maincolor);
+  color: var(--main-color);
   font-size: 3rem;
   cursor: pointer;
 }
@@ -767,7 +767,7 @@ body {
   border: none;
   /*  border: 1px solid var(--maincolor);
   border-radius: 0.5rem;*/
-  color: var(--maincolor);
+  color: var(--main-color);
   padding: 0.7rem 1rem;
   font: inherit;
   font-weight: 300;

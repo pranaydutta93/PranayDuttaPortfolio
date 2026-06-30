@@ -2,14 +2,14 @@
   font-family: 'Neris';
   src: url('fonts/Neris-Thin.otf') format('opentype');
   font-weight: 100;
-  color: var(--ftclr);
+  color: var(--main-color);
 }
 
 @font-face {
   font-family: 'Neris';
   src: url('fonts/Neris-Light.otf') format('opentype');
   font-weight: 300;
-  color: var(--ftclr);
+  color: var(--main-color);
 }
 
 *,
@@ -31,7 +31,7 @@ body {
   color: #9c9c9c;
   background: #000;
   font-family: 'Neris', sans-serif;
-  color: var(--maincolor);
+  color: var(--main-color);
 }
 
 /* Fullscreen hero */
@@ -101,7 +101,7 @@ body {
 
 .hero-nav a {
   /*color: #9c9c9c;*/
-  color: var(--ftclr);
+  color: var(--main-color);
   text-decoration: none;
   text-transform: uppercase;
   transition: color 0.25s ease;

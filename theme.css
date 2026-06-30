@@ -1,5 +1,5 @@
 :root {
-  --bg-url: url("/BGWHITE.jpg");                        /* set to url("./BG3LOWRES.jpg") to restore */
+  --bg-url: url("/BG3LOWRES.jpg");                        /* set to url("./BG3LOWRES.jpg") to restore */
   --bg-color: #ffffff;                   /* body background fallback */
-  --text-color: black;        /* change this one value to try different grays */
+  --main-color: #9c9c9c;        /* change this one value to try different grays */
 }
